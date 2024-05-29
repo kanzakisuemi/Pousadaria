@@ -1,14 +1,17 @@
 <%= form_with(model: @group_reservation) do |f| %>
   <div>
-    <%= f.text_field :name %>
     <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
   </div>
   <div>
-    <%= f.date_field :check_in_date %>
     <%= f.label :check_in_date %>
+    <%= f.date_field :check_in_date, class: 'form-control' %>
   </div>
   <div>
-    <%= f.date_field :check_out_date %>
     <%= f.label :check_out_date %>
+    <%= f.date_field :check_out_date, class: 'form-control' %>
+  </div>
+  <div>
+    <%= f.submit 'Fazer reserva' %>
   </div>
 <% end %>
