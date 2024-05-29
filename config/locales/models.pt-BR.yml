@@ -35,3 +35,7 @@ pt-BR:
         guest_limit: 'Máximo de Hóspedes'
         photo: 'Foto'
         daily_rate_cents: 'Valor Diária'
+      group_reservations:
+        name: Nome
+        check_in_date: Data de entrada
+        check_out_date: Data de saída

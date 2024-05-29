@@ -31,6 +31,10 @@
     </div>
     <%= link_to 'Cadastrar Quarto', new_inn_dashboard_inns_inn_rooms_path, class: 'btn btn-primary' %>
   </section>
+  <section id="group-reservations" class="mt-3">
+    <h2>Reservas para Grupo</h2>
+    <%= link_to "Nova reserva para grupo", new_group_reservation_path, class: 'btn btn-primary' %>
+  </section>
 <% else %>
   <h1>Pousadaria</h1>
   <p class="lead mb-3">Entre para gerenciar sua pousada.</p>

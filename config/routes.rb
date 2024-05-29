@@ -20,6 +20,8 @@ Rails.application.routes.draw do
     resources :inn_rooms, only: [:show, :edit, :update]
   end
 
+  resources :group_reservations, only: %i[ new create ]
+
   namespace :api do
     namespace :v1 do
       resources :inn_rooms, only: %i[ show ]
